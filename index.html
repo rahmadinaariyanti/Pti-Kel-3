@@ -1,14 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://spot.upi.edu/images/logo-upi.png">
     <title>QuizPTI-Kelompok 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .garis {
+            border-top: 2px solid;
+            margin-top: 50px;
+            margin-left: 10%;
+            width: 80%;
+        }
+
+        .garis h1 {
+            margin-top: 20px;
+            font-weight: bolder;
+        }
+
+        .header {
+            width: 100%;
+            padding: 16px;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+            position: fixed;
+            z-index: 1;
+        }
+
+        .header a {
+            color: #a87979;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        .textFirst {
+            margin-top: 50px;
+            width: 100%;
+            display: flex;
+            text-align: justify;
+            justify-content: center;
+        }
+
+        .textFirst p {
+            width: 80%;
+            font-size: 16px;
+        }
+
+        .posterImg {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .posterImg img {
+            width: 250px;
+        }
+
+        .berita {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .berita .card a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .card img {
+            transition: 0.5s ease-in-out;
+        }
+
+        .card img:hover {
+            opacity: 0.7;
+        }
+
+        .card-text {
+            font-size: medium;
+            transition: 0.5s ease-in-out;
+        }
+
+        .card-text:hover {
+            font-size: large;
+        }
+
+        .footer {
+            width: 100%;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #FFD2E2;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer h1 {
+            margin-top: 20px;
+            color: #a87979;
+        }
+
+        .footer h4 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            color: #a87979;
+        }
+
+        .footer a {
+            color: #a87979;
+            text-decoration: none;
+            margin-inline: 15px;
+            transition: 0.5s ease;
+        }
+
+        .footer a:hover {
+            color: #674848;
+        }
+    </style>
 </head>
+
 <body>
-    <div>
-        <h1>halloo</h1>
+    <!-- ==================HEADER====================================================== -->
+    <div id="header" class="header">
+        <a href="/index.html">DRAKOR NEWS</a>
     </div>
+
+    <!-- ==================SLIDE GAMBAR====================================================== -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/asset/FristImg/LovelyRun-firstImg 1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/asset/FristImg/Pyramid-firstImg 1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/asset/FristImg/Qot-fristImg 1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/asset/FristImg/ShopOf-firstImg 1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/asset/FristImg/YouthOf-firstImg 1.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================TEXT AWAL====================================================== -->
+    <div class="garis">
+        <h1>Apa itu Drakor</h1>
+    </div>
+
+    <div class="textFirst">
+        <p>Drama Korea, atau yang lebih populer dikenal dengan istilah "drakor", telah menjadi fenomena budaya yang
+            mendunia dalam beberapa dekade terakhir. Drakor adalah serial televisi yang diproduksi di Korea Selatan,
+            yang seringkali menampilkan cerita yang kompleks, karakter yang mendalam, dan produksi yang berkualitas
+            tinggi. Fenomena ini telah mempengaruhi budaya populer di banyak negara di seluruh dunia, termasuk di Asia,
+            Amerika, dan Eropa.
+            <br>
+            <br>
+            Sejarah drakor dimulai pada tahun 1960-an, ketika televisi pertama kali diperkenalkan di Korea Selatan.
+            Namun, popularitas drakor secara internasional baru benar-benar meledak pada tahun 2000-an, terutama setelah
+            kesuksesan serial drama seperti "Winter Sonata" dan "Jewel in the Palace". Kesuksesan tersebut membuka jalan
+            bagi industri hiburan Korea Selatan untuk mengekspor drakor ke pasar internasional.
+            <br>
+            <br>
+            Drakor seringkali menampilkan berbagai genre, termasuk drama romantis, komedi, melodrama, fantasi, dan
+            sejarah. Cerita dalam drakor dapat bervariasi dari kisah cinta yang mengharukan hingga cerita epik tentang
+            kekuasaan dan konflik politik. Yang membuat drakor begitu menarik bagi penonton internasional adalah
+            kedalaman karakter dan alur cerita yang kompleks, yang sering kali melibatkan elemen misteri dan intrik.
+            <br>
+            <br>
+            Salah satu faktor penting dalam kesuksesan drakor adalah talenta berbagai aktor dan aktris Korea Selatan
+            yang telah menjadi bintang global. Bintang-bintang seperti Lee Min-ho, Song Hye-kyo, Park Bo-gum, dan Bae
+            Suzy telah menjadi ikon populer di seluruh dunia, membawa daya tarik yang besar bagi penonton dari berbagai
+            latar belakang budaya.
+            <br>
+            <br>
+            Selain dari aspek hiburan, drakor juga sering kali menyelipkan pesan-pesan sosial dan nilai-nilai budaya
+            Korea Selatan. Cerita-cerita ini sering kali menggambarkan nilai-nilai seperti persahabatan, keluarga,
+            kesetiaan, dan keadilan, yang dapat merangsang pemirsa untuk berpikir lebih dalam tentang dunia di sekitar
+            mereka.
+            <br>
+            <br>
+            Selain itu, industri drakor juga telah memberikan kontribusi yang signifikan terhadap ekonomi Korea Selatan.
+            Produksi drakor yang berkualitas tinggi dan popularitasnya yang meningkat telah meningkatkan pariwisata dan
+            ekspor budaya Korea Selatan ke pasar internasional. Banyak penggemar drakor dari luar negeri yang memilih
+            Korea Selatan sebagai tujuan liburan mereka untuk mengunjungi lokasi syuting dan mengalami budaya Korea
+            secara langsung.
+            <br>
+            <br>
+            Namun, seperti halnya fenomena populer lainnya, drakor juga tidak luput dari kritik. Beberapa kritikus
+            berpendapat bahwa drakor seringkali menampilkan stereotip budaya Korea Selatan yang terlalu idealis atau
+            tidak realistis. Selain itu, ada juga kekhawatiran bahwa popularitas drakor dapat mengaburkan pandangan
+            tentang masalah sosial yang lebih serius di Korea Selatan, seperti tekanan sosial, kesenjangan ekonomi, dan
+            masalah kesehatan mental.
+            <br>
+            <br>
+            Meskipun demikian, tidak dapat disangkal bahwa drakor telah menjadi bagian integral dari budaya populer di
+            seluruh dunia. Dengan jangkauan globalnya yang terus berkembang dan pengaruhnya yang semakin kuat, drakor
+            kemungkinan besar akan terus menjadi salah satu bentuk hiburan yang paling populer dan berpengaruh di abad
+            ke-21.
+        </p>
+    </div>
+
+    <!-- ==================REKOMENDASI====================================================== -->
+    <div class="garis">
+        <h1>Rekomendasi Drakor</h1>
+    </div>
+
+    <div class="posterImg">
+        <img src="/asset/LovelyRun-poster.jpg" class="rounded">
+        <img src="/asset/Pyramid-posterImg.jpg" class="rounded">
+        <img src="/asset/Qot-PosterImg.jpeg" class="rounded">
+    </div>
+    <div class="posterImg">
+        <img src="/asset/ShopOf-posterImg.jpg" class="rounded">
+        <img src="/asset/YouthOf-posterImg.jpeg" class="rounded">
+        <img src="/asset/MyDemon-posterImg.jpeg" class="rounded">
+    </div>
+
+    <!-- ==================BERITA====================================================== -->
+    <div class="garis">
+        <h1>Berita Drakor</h1>
+    </div>
+
+    <div class="berita">
+        <div class="card" style="width: 18rem;">
+            <a href="/">
+                <img src="/asset/FristImg/LovelyRun-firstImg 1.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </a>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <a href="/">
+                <img src="/asset/FristImg/LovelyRun-firstImg 1.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </a>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <a href="/">
+                <img src="/asset/FristImg/LovelyRun-firstImg 1.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="berita">
+        <div class="card" style="width: 18rem;">
+            <a href="/">
+                <img src="/asset/FristImg/LovelyRun-firstImg 1.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </a>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <a href="/">
+                <img src="/asset/FristImg/LovelyRun-firstImg 1.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="garis"></div>
+
+    <!-- ==================FOOTER====================================================== -->
+    <div class="footer">
+        <h1>DRAKOR NEWS</h1>
+        <h4>Made By</h4>
+        <div>
+            <a href="https://www.instagram.com/fadhelraihann/">@fadhelraihann</a>
+            <a href="https://www.instagram.com/rhma.dnaa_?igsh=dHFkMDY3YW4zNjR0">@rhma.dnaa_</a>
+            <a href="https://www.instagram.com/yazeenta?igsh=MXB1b3RwMGhsbTh3YQ==">@yazeenta</a>
+        </div>
+    </div>
+
+
+    <!-- ==================SCRIPT JS====================================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var navbar = document.getElementById('header');
+            if (window.scrollY > 0) {
+                navbar.style.backgroundColor = '#FFD2E2';
+            } else {
+                navbar.style.backgroundColor = 'transparent';
+            }
+        });
+    </script>
 </body>
+
 </html>
